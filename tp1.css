@@ -1,0 +1,249 @@
+
+.container1{
+    width: 500px;
+    height: 500px;
+    background-color: blueviolet;
+    
+}
+.items1{
+    
+    
+   
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+    transition: transform 2s ;
+    
+}
+.container1:hover .items1{
+    transform:translateX(120%);
+    background-color: rgb(244, 255, 255);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.container2{
+    float: right;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(0, 255, 55);
+    
+}
+.items2{
+    
+    
+   
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+    animation: rotete 2s ease-in;
+
+}
+.items3{
+    
+    
+   float: right;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    animation: place 2s ease-in-out;
+}
+.container3{
+    margin: 2%;
+    float: left;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(0, 81, 255);
+    
+}
+.items4{
+    
+    
+   
+    width: 200px;
+    height: 200px;
+    background-color: rgb(251, 255, 0);
+    animation: transform 8s ease-in;
+
+}
+.items5{
+    
+    
+   float: right;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+    animation: scale 2s ease-in;
+}
+@keyframes transform{
+    5%{
+        opacity: 0;
+        transform:rotateX(40deg);
+    }
+    50%{
+        opacity: 1;
+        clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+        transform:rotateZ(80deg);
+        background-color: rgb(255, 0, 234);
+    }
+    100%{
+        clip-path: polygon(50% 0%, 80% 10%, 27% 26%, 25% 72%, 81% 82%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+    }
+}
+
+@keyframes rotete{
+    5%{
+        
+        transform:perspective(2);
+    }
+    30%{
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+    100%{
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        transform: skewY(50deg);}
+}
+@keyframes scale{
+    5%{
+        transform: scale(0.5);
+    }
+
+    100%{
+        transform: scale(1.5);
+        clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+        background-color: rgb(241, 255, 241);
+    }
+}
+.container4{
+    margin: 2%;
+    float: right;
+    width: 500px;
+    height: 500px;
+    background-color: #00E7FF;
+    
+}
+.items6{
+    
+    
+   
+    width: 200px;
+    height: 200px;
+    background-color: #541212;
+    animation: k 5s ease-in;
+
+}
+.items7{
+    
+    
+   float: right;
+    width: 200px;
+    height: 200px;
+    background-color: #ff0000;
+    animation: matrix 5s ease-in;
+}
+@keyframes matrix{
+    5%{
+        clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    }
+    30%{
+        transform:rotate(45deg);
+       
+        background-color: rgb(0, 0, 0);
+        clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    }
+    80%{
+        transform: rotateX(90deg);
+}
+100%{
+    transform: rotateZ(50deg);
+    background-color: teal;
+}
+}
+@keyframes k{
+    5%{
+        transform:skewX(50deg);
+        
+    }
+    100%{
+        clip-path: polygon(20% 0%, 0% 20%, 9% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 92% 49%, 100% 20%, 80% 0%, 50% 30%);
+        
+    }}
+    @keyframes place{
+        5%{
+            opacity: 0;
+            transform: translateY(90px)
+        }
+        40%{
+            clip-path: polygon(50% 49%, 80% 10%, 100% 35%, 100% 70%, 54% 56%, 50% 100%, 46% 59%, 0% 70%, 0% 35%, 20% 10%);
+        }
+        100%{
+            clip-path: polygon(50% 49%, 80% 10%, 100% 35%, 100% 70%, 54% 56%, 50% 100%, 46% 59%, 0% 70%, 0% 35%, 20% 10%);
+            opacity: 1;
+            transform: translateY(0px) ;
+        }}
+        .j{
+            background-color:#7c8d79;
+            width: 500px;
+            height: 200px;
+            position: absolute;
+            top: 5rem;
+            right: 10rem;
+            border-radius: 5px;
+        }
+        .v{
+            padding: 1rem;
+            background-color: #00E7FF;
+            width: 100%;
+            clip-path: circle(10% at 0% 0%);
+            transition: clip-path 5s ease-in-out;
+        }
+        .j .v p{
+            font-size: 1.5rem;
+        }
+        .j:hover .v{
+            clip-path: circle(70%);
+        }
+        .photo{
+            width: 200px;
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            position: absolute;
+            bottom: -70rem;
+        }
+        .photo img{
+            animation: change 5s linear infinite;
+            width: 100px;
+        }
+        @keyframes change {
+            0%{
+                transform: translateY(0);
+                opacity: 0;
+            }
+            40%{
+                
+                opacity: 1;
+            }
+            80%{
+                
+                opacity: 1;
+            }
+            100%{
+                transform: translateY(-800vh);
+                opacity: 1;
+            }
+        }
+        .photo img:nth-child(1){
+            animation-delay: 7.2s;
+        }
+        .photo img:nth-child(2){
+            animation-delay: 3s;
+        } .photo img:nth-child(3){
+            animation-delay: 8s;
+        } .photo img:nth-child(4){
+            animation-delay: 7s;
+        } .photo img:nth-child(5){
+            animation-delay: 4s;
+        } .photo img:nth-child(6){
+            animation-delay: 7.5s;
+        } .photo img:nth-child(7){
+            animation-delay: 6.4s;
+        }
